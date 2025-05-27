@@ -11,7 +11,8 @@ pub const FRAME_DELAY: usize = 8;
 // Characters change mid-scroll
 pub const MID_SCROLL_CHANGE = true;
 
-const DOT_HEAD_COLOR: u32 = @intCast(TerminalBuffer.Color.WHITE | TerminalBuffer.Styling.BOLD);
+const DOT_HEAD_COLOR: u32 = @intCast(TerminalBuffer.Color.DARK_BLUE | TerminalBuffer.Styling.BOLD);
+// When initializing Matrix, pass TerminalBuffer.Color.PURPLE as fg
 
 const Matrix = @This();
 
