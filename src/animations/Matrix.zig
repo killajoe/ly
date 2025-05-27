@@ -13,8 +13,6 @@ const dark_blues = [_]u32{
 };
 
 const fg_color: u32 = 0x000080;
-var matrix = try Matrix.init(allocator, terminal_buffer, fg_color, min_codepoint, max_codepoint);
-
 
 
 const Allocator = std.mem.Allocator;
