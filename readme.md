@@ -5,7 +5,8 @@
 
 Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
 
-[![ly purple matrix](https://img.youtube.com/vi/5pXN0h6fYVE/0.jpg)](https://www.youtube.com/watch?v=5pXN0h6fYVE)
+![purplelymatrix](https://github.com/user-attachments/assets/3e04dcbc-517f-4d12-a371-29287359d30c)
+
 
 ## Dependencies
 - Compile-time:
