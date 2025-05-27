@@ -159,7 +159,7 @@ fn draw(self: *Matrix) void {
         }
     }
 
-var x: usize = 0;
+const x: usize = 0;
 var y: usize = 0;
 while (y <= self.terminal_buffer.height) : (y += 1) {
     const dot = self.dots[buf_width * y + x];
