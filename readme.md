@@ -16,6 +16,10 @@ Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
   - xorg
   - xorg-xauth
   - shutdown
+ 
+### Archlinux/-based
+use this [PKGBUILD](https://github.com/killajoe/ly/blob/main/PKGBUILD)
+
 
 ### Debian
 ```
