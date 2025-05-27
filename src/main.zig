@@ -357,7 +357,7 @@ pub fn main() !void {
             animation = doom.animation();
         },
         .matrix => {
-            var matrix = try Matrix.init(allocator, &buffer, &buffer.Color.PURPLE, min_codepoint, max_codepoint);
+            var matrix = try Matrix.init(allocator, &buffer, TerminalBuffer.Color.PURPLE, config.cmatrix_min_codepoint, config.cmatrix_max_codepoint);
             animation = matrix.animation();
         },
         .colormix => {
