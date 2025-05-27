@@ -1,5 +1,5 @@
 # Ly - a TUI display manager
-# BPurple_matrix_Fork
+# Purple_matrix_Fork
 
 
 
