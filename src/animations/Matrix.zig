@@ -178,7 +178,6 @@ fn draw(self: *Matrix) void {
     }
 }
 
-
 fn initBuffers(dots: []Dot, lines: []Line, width: usize, height: usize, random: Random) void {
     var y: usize = 0;
     while (y <= height) : (y += 1) {
