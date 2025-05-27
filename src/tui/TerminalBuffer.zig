@@ -39,6 +39,8 @@ pub const Color = struct {
     pub const MAGENTA = 0x00FF00FF;
     pub const CYAN = 0x0000FFFF;
     pub const WHITE = 0x00FFFFFF;
+    pub const DARK_BLUE = 0x00000099;
+    pub const PURPLE = 0x00600090; // Example value for purple
 };
 
 random: Random,
