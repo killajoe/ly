@@ -12,7 +12,7 @@ pub const FRAME_DELAY: usize = 8;
 pub const MID_SCROLL_CHANGE = true;
 
 const DOT_HEAD_COLOR: u32 = @intCast(TerminalBuffer.Color.DARK_BLUE | TerminalBuffer.Styling.BOLD);
-// When initializing Matrix, pass TerminalBuffer.Color.PURPLE as fg
+// or use TerminalBuffer.Color.BLUE if you prefer the original blue
 
 const Matrix = @This();
 
