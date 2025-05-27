@@ -186,7 +186,7 @@ fn initBuffers(dots: []Dot, lines: []Line, width: usize, height: usize, random: 
             dots[y * width + x].value = null;
         }
     }
-
+}
     var x: usize = 0;
     while (x < width) : (x += 2) {
         var line = lines[x];
