@@ -160,7 +160,7 @@ fn draw(self: *Matrix) void {
                 first_col = false;
             }
         }
-}
+
     var x: usize = 0;
     while (x < buf_width) : (x += 2) {
     var y: usize = 1;
