@@ -161,7 +161,7 @@ fn draw(self: *Matrix) void {
 
 const x: usize = 0;
 var y: usize = 0;
-while (y < self.terminal_buffer.height) : (y += 1) {
+while (y < self.terminal_buffer.height) : (y +%= 1) {
     const dot = self.dots[buf_width * y + x];
     const cell = if (dot.value == null or dot.value == ' ') self.default_cell else blk: {
         const fg_color = if (dot.is_head)
