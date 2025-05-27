@@ -52,19 +52,20 @@ pub fn init(allocator: Allocator, terminal_buffer: *TerminalBuffer, fg: u32, min
 
     initBuffers(dots, lines, terminal_buffer.width, terminal_buffer.height, terminal_buffer.random);
 
-    return .{
-        .allocator = allocator,
-        .terminal_buffer = terminal_buffer,
-        .dots = dots,
-        .lines = lines,
-        .frame = 3,
-        .count = 0,
-        .fg = fg,
-        .min_codepoint = min_codepoint,
-        if (max_codepoint < min_codepoint) return error.InvalidCodepointRange;
-        .max_codepoint = max_codepoint - min_codepoint,
-        .default_cell = .{ .ch = ' ', .fg = fg, .bg = terminal_buffer.bg },
-    };
+if (max_codepoint < min_codepoint) return error.InvalidCodepointRange;
+
+return .{
+    .allocator = allocator,
+    .terminal_buffer = terminal_buffer,
+    .dots = dots,
+    .lines = lines,
+    .frame = 3,
+    .count = 0,
+    .fg = fg,
+    .min_codepoint = min_codepoint,
+    .max_codepoint = max_codepoint - min_codepoint,
+    .default_cell = .{ .ch = ' ', .fg = fg, .bg = terminal_buffer.bg },
+};
 }
 
 pub fn animation(self: *Matrix) Animation {
