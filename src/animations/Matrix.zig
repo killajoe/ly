@@ -176,7 +176,6 @@ fn draw(self: *Matrix) void {
     };
 
     cell.put(x, y - 1);
-}
     }
 }
 
