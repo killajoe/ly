@@ -1,7 +1,8 @@
 # Ly - a TUI display manager
-# Blue_Fork
+# BPurple_matrix_Fork
 
-![Ly screenshot](.github/screenshot.png "Ly screenshot")
+
+
 
 Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
 
@@ -48,7 +49,7 @@ changing the source code won't be necessary :)
 ## Cloning and Compiling
 Clone the repository
 ```
-$ git clone https://codeberg.org/AnErrupTion/ly
+$ git clone https://github.com/killajoe/ly.git
 ```
 
 Change the directory to ly
