@@ -61,6 +61,7 @@ pub fn init(allocator: Allocator, terminal_buffer: *TerminalBuffer, fg: u32, min
         .count = 0,
         .fg = fg,
         .min_codepoint = min_codepoint,
+        if (max_codepoint < min_codepoint) return error.InvalidCodepointRange;
         .max_codepoint = max_codepoint - min_codepoint,
         .default_cell = .{ .ch = ' ', .fg = fg, .bg = terminal_buffer.bg },
     };
@@ -106,9 +107,10 @@ fn draw(self: *Matrix) void {
                 } else {
                     const randint = self.terminal_buffer.random.int(u16);
                     const h = self.terminal_buffer.height;
+                    if (h < 3) return; // or handle error
                     line.length = @mod(randint, h - 3) + 3;
                     self.dots[x].value = @mod(randint, self.max_codepoint) + self.min_codepoint;
-                    line.space = @mod(randint, h + 1);
+                    line.space = @mod(randint, h +% 1);
                 }
             }
 
