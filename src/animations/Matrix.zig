@@ -12,6 +12,11 @@ const dark_blues = [_]u32{
     0x0000DD,
 };
 
+const fg_color: u32 = 0x000080;
+var matrix = try Matrix.init(allocator, terminal_buffer, fg_color, min_codepoint, max_codepoint);
+
+
+
 const Allocator = std.mem.Allocator;
 const Random = std.Random;
 
@@ -20,7 +25,7 @@ pub const FRAME_DELAY: usize = 8;
 // Characters change mid-scroll
 pub const MID_SCROLL_CHANGE = true;
 
-const DOT_HEAD_COLOR: u32 = @intCast(TerminalBuffer.Color.WHITE | TerminalBuffer.Styling.BOLD);
+const DOT_HEAD_COLOR: u32 = 0x0000FF;
 
 const Matrix = @This();
 
