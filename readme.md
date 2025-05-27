@@ -1,11 +1,11 @@
 # Ly - a TUI display manager
 # Purple_matrix_Fork
 
-<a href="https://www.youtube.com/watch?v=5pXN0h6fYVE">
-  <img src="https://img.youtube.com/vi/5pXN0h6fYVE/0.jpg" width="600"/>
-</a>
+![purplely](https://github.com/user-attachments/assets/af6d47d1-fb7b-42dd-9e42-f94ae1323cdf)
 
 Ly is a lightweight TUI (ncurses-like) display manager for Linux and BSD.
+
+[![ly purple matrix](https://img.youtube.com/vi/5pXN0h6fYVE/0.jpg)](https://www.youtube.com/watch?v=5pXN0h6fYVE)
 
 ## Dependencies
 - Compile-time:
