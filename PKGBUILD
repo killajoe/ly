@@ -1,11 +1,9 @@
-# Original-Maintainer: steffeno <steffeno dash etc at protonmail dot com>
-# purple fork by joekamprad[at]endeavouros.com
-
+# Maintainer: steffeno <steffeno dash etc at protonmail dot com>
 _pkgname=ly
-pkgname="$_pkgname"-purplematrix-git
+pkgname="$_pkgname"-purple
 pkgver=.
-pkgrel=3
-pkgdesc="TUI display manager purple matrix"
+pkgrel=1
+pkgdesc="TUI display manager"
 arch=(i686 x86_64 aarch64)
 url="https://github.com/killajoe/ly.git"
 license=('custom:WTFPL')
@@ -20,7 +18,7 @@ source=("git+$url")
 md5sums=('SKIP')
 
 pkgver() {
-  cd "$_pkgname"
+  cd "${_reponame}"
   printf "%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
